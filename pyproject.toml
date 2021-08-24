@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mypythonproject"
+version = "0.1.0"
+description = "An example project template using Poetry, Tox, and dunamai"
+authors = ["Manu Lange <Manu.Lange@plantandfood.co.nz>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+tox-poetry = "^0.4.0"
+dunamai = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
