@@ -5,14 +5,18 @@ description = "An example project template using Poetry, Tox, and dunamai"
 authors = ["Manu Lange <Manu.Lange@plantandfood.co.nz>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.6.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 tox-poetry = "^0.4.0"
+black = "^21.7b"
 dunamai = "^1.6.0"
-black = "^21.7b0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 127
+target-version = ['py36', 'py37', 'py38', 'py39']
